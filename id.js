@@ -5,9 +5,10 @@ document.getElementById("idForm").addEventListener("submit", function(event) {
     const year = document.getElementById("year").value;
     const sem = document.getElementById("semester").value;
     const dept = document.getElementById("department").value;
+    const shortName = document.getElementById("shortName").value;
 
     const generatedID = generateID(name, year, sem, dept);
-    const generatedEmail = generateEmail(name, dept);
+    const generatedEmail = generateEmail(name, dept, shortName);
 
     document.getElementById("output").innerHTML = "Generated ID: " + generatedID + "<br>Generated Email: " + generatedEmail;
 });
@@ -29,7 +30,7 @@ function generateID(name, year, sem, dept) {
     return concatenatedID;
 }
 
-function generateEmail(name, dept) {
+function generateEmail(name, dept, shortName) {
     const parts = name.split(" ");
     const firstName = parts[0].toLowerCase();
     const lastName = parts[parts.length - 1].toLowerCase();
@@ -43,6 +44,6 @@ function generateEmail(name, dept) {
         departmentName = 'bba';
     }
 
-    const email = firstName + "." + lastName + "." + departmentName + "@ulab.edu.bd";
+    const email = firstName + "." + lastName + "@" + shortName + ".edu.bd";
     return email;
 }
