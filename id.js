@@ -26,7 +26,7 @@ function generateID(name, year, sem, dept) {
     }
 
     const studentNumber = Math.floor(Math.random() * 500) + 1;
-    const concatenatedID =  b + deptCode + studentNumber.toString().padStart(3, '0');
+    const concatenatedID = deptCode + b + sem + studentNumber.toString().padStart(3, '0');
     return concatenatedID;
 }
 
@@ -44,6 +44,6 @@ function generateEmail(name, dept, shortName) {
         departmentName = 'bba';
     }
 
-    const email = firstName + "." + lastName + "@" + shortName + ".edu.bd";
+    const email = firstName + "." + lastName + "." + departmentName + "@" + shortName + ".edu.bd";
     return email;
 }
