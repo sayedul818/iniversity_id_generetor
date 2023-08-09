@@ -15,9 +15,18 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    font-size: 24px;
-    color: #fffefe;
-    text-decoration: underline;
+    font-size: 28px;
+    color: #1b1b1b;
+    background-color: #A1CCD1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+h1:hover {
+    background-color: #0056b3;
 }
 
 .id-card {
@@ -61,7 +70,7 @@ button:focus {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #A78295;
     color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
