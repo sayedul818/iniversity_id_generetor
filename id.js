@@ -25,8 +25,8 @@ function generateID(name, year, sem, dept) {
         deptCode = '301';
     }
 
-    const studentNumber = Math.floor(Math.random() * 500) + 1;
-    const concatenatedID = deptCode + b + sem + studentNumber.toString().padStart(3, '0');
+    const studentNumber = Math.floor(Math.random() * 300) + 1;
+    const concatenatedID =  b + deptCode + studentNumber.toString().padStart(3, '0');
     return concatenatedID;
 }
 
