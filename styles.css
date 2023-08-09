@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #322653;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fffefe;
+    text-decoration: underline;
+}
+
+.id-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.id-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #444444;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

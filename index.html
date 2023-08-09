@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University ID Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ulab Id And Email Generator</h1>
+        <div class="id-card">
+            <form id="idForm">
+                <label for="name">Enter Student Name:</label>
+                <input type="text" id="name" required>
+                <label for="year">Enter Year (e.g., 2022):</label>
+                <input type="text" id="year" required>
+                <label for="semester">Enter Semester:</label>
+                <select id="semester" required>
+                    <option value="1">Spring</option>
+                    <option value="2">Summer</option>
+                    <option value="3">Fall</option>
+                </select>
+                <label for="department">Enter Department:</label>
+                <select id="department" required>
+                    <option value="1">CSE</option>
+                    <option value="2">EEE</option>
+                    <option value="3">BBA</option>
+                </select>
+                <button type="submit">Generate ID</button>
+            </form>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="id.js"></script>
+</body>
+</html>
