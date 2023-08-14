@@ -3,19 +3,18 @@ body {
     background-color: #322653;
     margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    flex-direction: column; /* Set flex direction to column */
+    min-height: 100vh; /* Minimum height of the viewport */
 }
 
 .container {
+    flex: 1; /* Allow the container to take up remaining space */
     text-align: center;
     animation: fadeIn 0.5s ease;
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 28px;
+    margin-bottom: 10px;
     color: #1b1b1b;
     background-color: #A1CCD1;
     padding: 10px 20px;
@@ -23,6 +22,11 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
     cursor: pointer;
+    margin: 20px auto 10px; /* Added margin to create gap at the top */
+    text-align: center; /* Center the text inside the h1 element */
+    font-size: 24px; /* Adjust the font size */
+    width: 50%; /* Set the width to 50% */
+
 }
 
 h1:hover {
@@ -35,7 +39,12 @@ h1:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 20px; /* Add margin at the bottom to create space */
     transition: box-shadow 0.3s ease;
+
+    /* Adjust the width as needed */
+    width: 40%; /* You can change this value to make the box narrower or wider */
+    margin: 0 auto; /* Center the box horizontally */
 }
 
 .id-card:hover {
@@ -93,4 +102,15 @@ button:hover {
     to {
         opacity: 1;
     }
+}
+
+/* ... (your existing CSS rules) ... */
+
+
+footer {
+    margin-top: 20px; /* Add margin at the top to create space */
+    padding: 10px 0;
+    text-align: center;
+    background-color: #A1CCD1;
+    color: #1b1b1b;
 }
